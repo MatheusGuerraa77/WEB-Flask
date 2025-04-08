@@ -8,12 +8,12 @@
 <body>
     <h2 style="text-align: center;">Integrando HTML ao Flask</h2>
     <hr>
-    Lista de conteúdos:
+    Lista de Conteúdos:
     <ol>
-        <li> {{ conteudo1 }}</li>
-        <li> {{ conteudo2 }}</li>
-        <li> {{ conteudo3 }}</li>
-        <li> {{ conteudo4 }}</li>
+        {% for conteudo in conteudos %}
+        <li>{{conteudo}}</li>
+        {% endfor %}
     </ol>
+   
 </body>
 </html>
